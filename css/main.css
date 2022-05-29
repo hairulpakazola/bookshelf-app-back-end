@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Raleway;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #5f30e2;
+  padding: 16px;
+  color: white;
+}
+
+.hearder_bar,
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper .container {
+  width: 1000px;
+  border-radius: 8px;
+  margin: 16px;
+  background: white;
+  padding: 16px;
+  padding-bottom: 110px;
+  flex-grow: 1;
+  height: fit-content;
+}
+
+.Bookshelf {
+  width: 1000px;
+  border-radius: 8px;
+  margin: 16px;
+  background: white;
+  padding: 16px;
+  flex-grow: 1;
+  height: fit-content;
+}
+
+.item {
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 12px 24px 12px 24px;
+  background: white;
+  display: block;
+  align-items: center;
+}
+
+.item > .inner h2 {
+  margin-bottom: unset;
+}
+
+.item > .inner p {
+  margin-top: 5px;
+}
+
+.form {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  height: 300px;
+  border-radius: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.wrapper > form > .input_inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper > form > .input_inline > label {
+  margin-right: 10px;
+}
+
+.shadow {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+input[type="text"],
+[type="number"] {
+  font-family: Raleway;
+  background: #f5f1ff;
+  border: 2px solid #9475ea;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.btn-simpan {
+  width: fit-content;
+  border: none;
+  font-family: Raleway;
+  border-radius: 16px;
+  padding: 12px 24px;
+  border: 2px solid #5f30e2;
+  color: black;
+  font-size: 24px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn-simpan:hover {
+  background: #5f30e2;
+  color: white;
+}
+
+.read-button {
+  width: fit-content;
+  border: none;
+  font-family: Raleway;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background: #5f30e2;
+  color: white;
+  font-size: 15px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.read-button:hover {
+  background: #4824ac;
+  color: white;
+}
+
+.delete-button {
+  width: fit-content;
+  border: none;
+  font-family: Raleway;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background: #e23030;
+  color: white;
+  font-size: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: auto;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #c21821;
+  color: white;
+}
+
+input[type="text"],
+[type="number"] .btn-simpan:focus {
+  outline: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-title {
+  margin: auto 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    margin: 0;
+  }
+
+  .wrapper .container {
+    width: 100%;
+  }
+
+  .list-item {
+    width: 90%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
